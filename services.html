@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="services.css">
+    <title>ADPROTECT</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                
+                <h2><span style="color:#00ff84;">AD</span><img src="logo2.png" width="80" >PROTECT</h2>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="intro.html" >Home</a></li>
+                <li><a href="#"class="active">services</a></li>
+                <!--
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                
+                <li><a href="#">Contact</a></li>-->
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+
+
+
+    <body>
+
+      <div class="service">
+        <i class="fas fa-network-wired"></i>
+        <h2>Networking specalist</h2>
+        <p>
+          Optimizing and securing network infrastructure for seamless communication and data transfer
+        </p>
+      </div>
+      <div class="service">
+        <i class="fas fa-database"></i>
+        <h2>Pentester</h2>
+        <p>
+          Securing digital landscapes through comprehensive penetration testing and vulnerability assessments
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="service">
+          <i class="fas fa-laptop-code"></i>
+          <h2>Web Designer</h2>
+          <p>
+            Crafting visually appealing and user-friendly websites that blend creativity with functionality
+          </p>
+        </div>
+        <!-- 
+        <div class="service">
+          <i class="fas fa-chart-line"></i>
+          <h2>Marketing</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div> -->
+        <div class="service">
+          <i class="fab fa-sketch"></i>
+          <h2>Social Media Designer</h2>
+          <p>
+            Enhancing online presence through engaging and brand-focused social media design strategies
+          </p>
+        </div>
+        
+        <!--
+        <div class="service">
+          <i class="fas fa-mobile-alt"></i>
+          <h2>App Development</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-file-invoice"></i>
+          <h2>Accounting</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-money-check-alt"></i>
+          <h2>Payroll</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>-->
+        
+      </div>
+    </div>
+  </body>
+
+
+
+
+    

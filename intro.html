@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>ADPROTECT</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                
+                <h2><span style="color:#00ff84;">AD</span><img src="logo2.png" width="70" >PROTECT</h2>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="services.html">services</a></li>
+                <!--
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                
+                <li><a href="#">Contact</a></li>-->
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Hi, It's Me</h3>
+                <h1>I'm <span style="color:#00ff84;">Adel</span> Essouaidi</h1>
+                <p>
+                    I'm  a skilled technician specializing in Infrastructure Digital Option Cybersecurity. Welcome to my portfolio, where innovation meets security. Explore my work to discover how I bring a proactive approach and cutting-edge solutions to fortify digital infrastructures against evolving cyber threats.
+                    
+                    Best,
+
+                      <p>adel essouaidi</p> 
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/essouaidi-adel-a9b437296/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BDRGjfm9iSfS5hOBwYw8qdw%3D%3D" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.instagram.com/adilessouaidi/" target="_blank" ><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter '></i></a>
+                    
+                </div>
+            </div>
+            <div class="img-sec">
+                <div class="images">
+                    <img src="image adel 1 cv.png" alt="" class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
